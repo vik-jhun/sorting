@@ -90,8 +90,8 @@ def merge_sorted(xs, cmp=cmp_standard):
         return xs
     else:
         ctr = len(xs)//2
-        left = xs[:center]
-        right = xs[center:]
+        left = xs[:ctr]
+        right = xs[ctr:]
 
         merge_sorted(left, cmp)
         merge_sorted(right, cmp)
